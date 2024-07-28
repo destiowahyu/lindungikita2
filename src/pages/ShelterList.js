@@ -28,21 +28,21 @@ const ShelterList = ({ fetchSheltersAction }) => {
   return (
     <div className="bg-white">
       <Header />
-      <div className="container mx-auto py-8 px-20 md:px-24 lg:px-32 mt-20"> {/* Tambah padding horizontal */}
-        <h1 className="text-3xl font-bold mb-6">Daftar Lokasi Pengungsian</h1>
+      <div className="container py-10 px-7 md:px-24 lg:px-40 mt-20">
+        <h1 className="text-3xl text-center font-bold mb-6">Daftar Lokasi Pengungsian</h1>
 
         {/* Search bar */}
-        <div className="mb-6">
+        <div className="text-center mb-6">
           <input
             type="text"
-            placeholder="Cari lokasi pengungsian..."
+            placeholder="Cari lokasi pengungsian disini"
             value={searchTerm}
             onChange={handleSearchChange}
-            className="px-4 py-2 border border-gray-300 rounded-lg w-full"
+            className="text-center max-w-xl px-4 py-2 border border-gray-300 rounded-3xl w-full transition duration-300 ease-in-out hover:bg-gray-100"
           />
         </div>
 
-        {/* List of shelters */}
+        {/*Daftar Lokasi */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredShelters.length > 0 ? (
             filteredShelters.map((shelter) => (
@@ -57,4 +57,4 @@ const ShelterList = ({ fetchSheltersAction }) => {
   );
 };
 
-export default connect(null, { fetchSheltersAction })(ShelterList); // Connect component to Redux and fetchSheltersAction
+export default connect(null, { fetchSheltersAction })(ShelterList);

@@ -12,10 +12,9 @@ const About = () => (
         Aplikasi ini murni dibuat 100% oleh Destio Wahyu Lanio dengan menggunakan sumber sumber yang ada di internet serta referensi design dari aplikasi yang sudah ada. Serta bantuan chatgpt dalam mengatasi error.
       </p>
     </div>
-      <div className="flex justify-center my-4">
-          <img src={logoabout} alt="logoabout" className="w-20 md:w-1/4 rounded-lg"/>
-      </div>
-
+    <div className="flex justify-center my-4">
+      <img src={logoabout} alt="logoabout" className="w-60 md:w-1/4 rounded-lg"/>
+    </div>
   </div>
 );
 

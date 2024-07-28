@@ -28,7 +28,7 @@ const ShelterDetail = () => {
   return (
     <div className="bg-white min-h-screen">
       <Header />
-      <div className="container mx-auto py-8 px-20 mt-24">
+      <div className="container py-10 px-7 md:px-24 lg:px-40 mt-20">
         <h1 className="text-3xl font-bold mb-4">{shelter.nama}</h1>
         <div className="flex flex-wrap lg:flex-nowrap">
           <div className="bg-gray-100 p-6 rounded-lg shadow-md w-full lg:w-2/3 mb-6 lg:mb-0">
@@ -79,7 +79,7 @@ const ShelterDetail = () => {
 
         <button
           onClick={() => setIsFormOpen(true)}
-          className="bg-white text-black border border-black py-2 px-4 rounded-lg hover:bg-gray-200 transition duration-300 mt-6"
+          className="hover:text-[#147970] hover:bg-gray-300 bg-gray-100 text-black py-4 px-6 font-semibold rounded-3xl hover:bg-gray-200 transition duration-300 mt-6"
         >
           Form Pengungsian
         </button>
@@ -91,37 +91,37 @@ const ShelterDetail = () => {
               <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <label className="block text-gray-800 font-bold mb-2">Nama Lengkap</label>
-                  <input type="text" className="px-4 py-2 border border-gray-300 rounded-lg w-full" required />
+                  <input type="text" className="px-4 py-2 border border-gray-300 rounded-3xl w-full" required />
                 </div>
                 <div className="mb-4">
                   <label className="block text-gray-800 font-bold mb-2">No HP</label>
-                  <input type="text" className="px-4 py-2 border border-gray-300 rounded-lg w-full" required />
+                  <input type="text" className="px-4 py-2 border border-gray-300 rounded-3xl w-full" required />
                 </div>
                 <div className="mb-4">
                   <label className="block text-gray-800 font-bold mb-2">Tanggal Lahir</label>
-                  <input type="date" className="px-4 py-2 border border-gray-300 rounded-lg w-full" required />
+                  <input type="date" className="px-4 py-2 border border-gray-300 rounded-3xl w-full" required />
                 </div>
                 <div className="mb-4">
                   <label className="block text-gray-800 font-bold mb-2">Alamat</label>
-                  <input type="text" className="px-4 py-2 border border-gray-300 rounded-lg w-full" required />
+                  <input type="text" className="px-4 py-2 border border-gray-300 rounded-3xl w-full" required />
                 </div>
                 <div className="mb-4">
                   <label className="block text-gray-800 font-bold mb-2">Pekerjaan</label>
-                  <input type="text" className="px-4 py-2 border border-gray-300 rounded-lg w-full" required />
+                  <input type="text" className="px-4 py-2 border border-gray-300 rounded-3xl w-full" required />
                 </div>
-                <div className="flex justify-end">
+                <div className="flex justify-end gap-3">
                   <button
                     type="button"
-                    className="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300 mr-2"
+                    className="inline-block px-6 py-3 bg-[#c61212] text-[#fff] font-semibold rounded-3xl shadow-md hover:text-[#fff] hover:bg-[#f85b5b] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
                     onClick={() => setIsFormOpen(false)}
                   >
                     Tutup
                   </button>
                   <button
                     type="submit"
-                    className="bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition duration-300"
+                    className="inline-block px-6 py-3 bg-gray-200 text-black font-semibold rounded-3xl shadow-md hover:text-[#fff] hover:bg-[#22a0db] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
                   >
-                    Submit
+                    Kirim
                   </button>
                 </div>
               </form>
@@ -133,9 +133,9 @@ const ShelterDetail = () => {
           <div className="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center z-50">
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <h2 className="text-2xl font-bold mb-4">Terima Kasih</h2>
-              <p>Data pengungsian Anda telah tersimpan.</p>
+              <p className='mb-6'>Data pengungsian Anda telah tersimpan.</p>
               <button
-                className="bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition duration-300 mt-4"
+                className="inline-block px-4 py-2 bg-gray-200 text-black font-semibold rounded-3xl shadow-md hover:text-[#fff] hover:bg-[#bbbbbb] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 "
                 onClick={() => setIsFormSubmitted(false)}
               >
                 Tutup

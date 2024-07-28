@@ -9,7 +9,7 @@ const ShelterItem = ({ shelter }) => {
       <p className="mb-4">Kapasitas: {shelter.kapasitas} orang</p>
       <Link
         to={`/shelters/${shelter.id}`}
-        className="inline-block px-6 py-3 bg-blue-200 text-black font-semibold rounded-lg shadow-md hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        className="inline-block px-6 py-3 bg-gray-200 text-black font-semibold rounded-3xl shadow-md hover:text-[#147970] hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
       >
         Detail
       </Link>
