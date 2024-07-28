@@ -1,6 +1,4 @@
-// src/redux/reducers/sheltersReducer.js
-
-import { FETCH_SHELTERS_SUCCESS } from '../actions/types'; // Define action types
+import { FETCH_SHELTERS_SUCCESS } from '../actions/types';
 
 const initialState = {
   shelters: [],
