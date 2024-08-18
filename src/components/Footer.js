@@ -9,7 +9,7 @@ const Footer = () => (
       <p className="text-sm mt-1">
         &copy; 2024 LindungiKita. All rights reserved.
       </p>
-      <p className="text-sm mt-4">A11.2021.13568
+      <p className="text-sm mt-4">Destio Wahyu - A11.2021.13568
       </p>
     </div>
   </footer>
